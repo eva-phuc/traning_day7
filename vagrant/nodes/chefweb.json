@@ -1,0 +1,19 @@
+{
+  "host_name" : "chef.alermo.com",
+  "run_list":[
+    "recipe[base]",
+    "recipe[nameserver]",
+    "recipe[php-mysql-httpd]",
+    "recipe[composer]",
+    "recipe[memcached]",
+    "recipe[alermo]"
+  ],
+  "deploy": {
+    "user":   "vagrant",
+    "group":  "vagrant",
+    "application_name": "alermo"
+  },
+  "automatic": {
+    "ipaddress": "chefweb"
+  }
+}

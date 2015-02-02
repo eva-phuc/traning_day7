@@ -1,0 +1,17 @@
+*.swp
+fuel/app/logs/
+public/assets/cache/*
+!.gitkeep
+bin/result
+*.ppr
+fuel/app/modules/ios/logs/20*
+fuel/app/modules/android/logs/20*
+fuel/app/cache/
+fuel/app/tmp/
+fuel/packages/common/config/devhiguchi
+fuel/packages/aucfan/config/devhiguchi
+fuel/app/modules/ios/config/devhiguchi
+/nbproject/private/
+/vagrant/.vagrant
+/vendor/bundle
+.idea

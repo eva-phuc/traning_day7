@@ -1,0 +1,335 @@
+@charset "UTF-8";
+/* body */
+
+body {
+	color: #574d2d;
+	font-family: Helvetica, Arial, Verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align: center;
+	font-size: 12px;
+	background-color: #fff;
+	position: relative;
+	padding-top: 90px;
+}
+
+/* anchor */
+a:link {
+	color: #000;
+	text-decoration:none;
+}
+
+a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #f78b71;
+	text-decoration: none;
+}
+
+
+/* -----------------header----------------- */
+#header-wrap {
+  background: url(../img/header_bg.jpg) center top no-repeat;
+  width: 100%;
+  height: 90px;
+  position:fixed;
+  top:0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+}
+
+#header {
+  width: 1140px;
+  height: 90px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+}
+
+#header h1 {
+  position: absolute;
+  top:10px;
+  left: 0;
+}
+
+#header h1 a:hover img {
+	filter: alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
+
+#header #nav {
+  position: absolute;
+  top:35px;
+  left: 220px;
+}
+
+#header #nav li {
+  float: left;
+  font-size: 13px;
+  margin-right: 25px;
+}
+
+/* -----------------top----------------- */
+#top-wrap {
+  width: 100%;
+  height: 600px;
+}
+
+#top {
+  width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top-iphone {
+  position: absolute;
+  left: 853px;
+  top:50px;
+}
+
+#top-copy {
+  position: absolute;
+  top:250px;
+  left:445px;
+}
+
+#top-dl {
+  position: absolute;
+  left: 0;
+  top:576px;
+}
+
+
+
+/* -----------------dl-button----------------- */
+
+.dl-button li {
+  display: inline-block;
+}
+
+.dl-button .android {
+  margin-left: 15px;
+}
+
+#top .dl-button .ios a {
+  background: url(../img/dl_shadow_ios.gif) center bottom no-repeat;
+  padding-bottom: 5px;
+}
+
+#top .dl-button .android a {
+  background: url(../img/dl_shadow_android.gif) center bottom no-repeat;
+  padding-bottom: 5px;
+}
+
+#top .dl-button a:hover {
+  background: none;
+}
+
+.dl-button a:hover img {
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+
+/* -----------------about----------------- */
+
+#about {
+  width: 1140px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  font-size: 18px;
+  padding: 50px 0 50px 0;
+}
+
+#about div {
+  width: 360px;
+  display: inline-block;
+  float: left;
+}
+
+#about .about-1,
+#about .about-2 {
+  margin-right: 30px;
+}
+
+#about h3 {
+  color: #f78b71;
+  font-size: 18px;
+}
+
+#about p {
+  line-height: 1.6;
+  padding: 20px 0;
+}
+
+/* -----------------scene----------------- */
+
+#scene-wrap {
+  clear: both;
+  background-color: #f7f7f7;
+  border-bottom: 1px #ebebeb solid;
+  line-height: 0;
+}
+
+#scene {
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+#scene div {
+  float: left;
+}
+
+#scene h2 {
+  font-size: 18px;
+  color: #f78b71;
+  line-height: 1.6;
+}
+
+#scene h3 {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#scene h3 span {
+  text-decoration:line-through;
+}
+
+#scene h3 strong {
+  color: #f78b71;
+}
+
+#scene .scene-1 {
+ margin:0 120px 0 60px;
+}
+
+#scene .scene-sale {
+ margin:0 100px 0 0;  
+}
+
+#scene .scene-sale h2 {
+  margin:30px 0 80px 0;
+}
+
+#scene .scene-sale {
+  font-size: 14px;
+  color: #999;
+}
+
+#scene .scene-sale img {
+  margin-top: 10px;
+}
+
+#scene-wrap:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* -----------------screen----------------- */
+
+#screen {
+  width: 1000px;
+  height: 660px;
+  margin: 0 auto;
+  z-index: 0;
+}
+
+#screen-scroll {
+  width: 1000px;
+}
+
+#screen-scroll li {
+  width: 340px;
+  float: left;
+}
+
+#screen h2 {
+  margin: 40px 0;
+  color: #f78b71;
+  font-size: 18px;
+  border-bottom: 2px #f78b71 solid;
+  display: inline-block;
+}
+
+/* -----------------download----------------- */
+
+#download {
+  background: #f78b71 url(../img/download_bg.jpg) center bottom no-repeat;
+  height: 755px;
+  color: #fff;
+  font-size: 18px;
+}
+
+#download h2 {
+  padding: 100px 0 60px 0;
+}
+
+#download .dl-button .android {
+  margin-left: 50px;
+}
+
+/* -----------------download----------------- */
+
+#contents #footer {
+  background: none;
+}
+
+#content {
+  text-align: left;
+  width: 960px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+#content h1 {
+  font-weight: bold;
+  margin: 2em 0 1em 0;
+  font-size: 14px;
+}
+
+#content p {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+/* -----------------footer----------------- */
+#footer-wrap {
+  background: #f7f7f7 url(../img/footer_bg.gif) center top repeat-x;
+}
+
+#footer {
+  padding: 100px 0;
+  background: url(../img/footer_clip.jpg) center top no-repeat;
+  color: #858585;
+}
+
+#footer a:link,
+#footer a:visited {
+	color: #858585;
+	text-decoration:none;
+}
+
+#footer a:hover,
+#footer a:active {
+	color: #f78b71;
+	text-decoration: none;
+}
+
+#footer p,
+#footer ul,
+#footer ul li {
+  display: inline;
+}
+
+#footer ul li {
+  margin-left:15px;
+}

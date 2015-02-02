@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+/* ---------------------------------------------------------
+AucUniv Style Reset
+------------------------------------------------------------ */
+.input-block-level { min-height: 18px; }
+a { color: #0066CC; }
+[class*="span"] { margin-left: inherit; }
+.row-fluid [class*="span"] { min-height: 18px; }
+.container-fluid { padding-left: 0px; padding-right: 0px; }
+p { margin: 0; }
+h1, h2, h3, h4, h5, h6 { color: inherit; font-weight: inherit; line-height: inherit; margin: 0px; text-rendering: optimizelegibility; }
+h1, h2, h3 { line-height: inherit; }
+h1,h2,h3,h4,h5,h6 { font-size: inherit; }
+
+ul, ol { margin: 0; padding: 0; }
+ul ul, ul ol, ol ol, ol ul { margin-bottom: inherit; }
+li { line-height: inherit; list-style:none; }
+ul.inline > li, ol.inline > li { padding-left: inherit; padding-right: inherit; }
+dl { margin-top: inherit; margin-bottom: inherit; }
+dt, dd { line-height: inherit; }
+dt { margin-left: inherit; }
+dd { margin-left: inherit; }
+em { font-style: normal; }
+hr { margin: 0px 0px 10px; }
+form { margin: 0px; }
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+     margin-bottom: 0px;
+}
+input[type="radio"], input[type="checkbox"] { margin: 0 0 0; }
+
+
+/* ---------------------------------------------------------
+Contents Base
+------------------------------------------------------------ */
+body { background: #FFF; font-family: "メイリオ","Hiragino Kaku Gothic Pro","MS PGothic","MS UI Gothic",Helvetica,Arial,sans-serif; }
+.contents.top { margin: 1.5em auto; }
+.contents { margin: 1.25em auto 2.25em auto !important; }
+
+
+/* ---------------------------------------------------------
+Title Head: h2
+------------------------------------------------------------ */
+.title_hd01 {
+	border-left: 5px solid #222;
+	background: #E5E0D4;
+	margin-bottom: 20px;
+	padding: 6px 0 6px 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/* ---------------------------------------------------------
+Module Layout
+------------------------------------------------------------ */
+/* Regist Box */
+.regist_box { clear: both; margin-bottom: 20px; border-radius: 8px; }
+.regist_box.bd_01 { border: 1px solid #CBCBCB; }
+.regist_box.bg_01 { background: #FEFCFC; }
+.regist_box.pd_01 { padding: 10px 20px 30px 20px; }
+.regist_box.pd_02 { padding: 10px 30px 30px 30px; }
+.regist_box ul.alert_txt li{ clear: both; display:block; padding-top: 5px; font-size: 0.85em; color: #F50C0D; }
+
+/* Inner Text 01 */
+.regist_box .inner_text01 {
+	margin-top: 20px;
+	margin-bottom: 0;
+	font-size: 1.15em;
+	text-align: center;
+	line-height: 1.6;
+}
+
+/* Left Contents - IE7 StarHack Set */
+*:first-child+html .row-fluid .left_contents[class*="span"] { margin-left: 0 !important; }
+
+
+
+/* ---------------------------------------------------------
+Bread Crumb
+------------------------------------------------------------ */
+.breadcrumb { background-color: inherit; margin-bottom: inherit; font-size: 0.85em; }
+.breadcrumb a { color: #333; }
+.breadcrumb > li > .divider { padding: 0 2px; }
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+@media (max-width: 767px) {
+	/* Regist Flow */
+	.regist_flow { width: 560px; }
+	.regist_flow li { width: 150px; }
+	.regist_flow li.step2,
+	.regist_flow li.step3 {
+		background: url(../img/arrow_icon01.png) no-repeat 15px 50%;
+		padding-left: 50px;
+	}
+	.regist_flow li span { display: block; padding: 10px 0; font-size: 0.9em; }
+	
+	/* Regist Form */
+	.regist_form li dl dt { text-align: left; margin-bottom: 5px; }
+	
+	/* Button Action Purchase */
+	.btn_action.row_two01 ul { max-width: 192px; text-align: center; }
+	.btn_action.row_two01 ul li.btn_left { margin-bottom: 1em; }
+	
+	/* SSL Proof */
+	.ssl_proof table { margin: 0 auto; width: 100%; }
+}
+
+@media print {
+}
+
+@media (min-width: 1200px) {	
+}
+
+@media (max-width: 480px) {
+	
+	/* Breadcrumb */
+	.breadcrumb { padding: 0 0 8px 0; font-size: 0.75em; }
+	
+	/* Inner Text01 Display Set */
+	.regist_box .inner_text01 br.hidden { display: inherit; }
+}
+
+@media (max-width: 979px) {
+	
+	/* Body Side Padding Reset */
+	body { padding-left: 0; padding-right: 0; }	
+}
+
+@media (min-width: 980px) {
+}

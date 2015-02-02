@@ -1,0 +1,407 @@
+@charset "utf-8";
+
+/* ---------------------------------------------------------------
+common
+----------------------------------------------------------------*/
+*{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	margin:0 0 20px 0;
+	width:100%;
+	min-width:320px;
+	background:#f7f7f7;
+	color:#333;
+	font-size: 14px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+}
+/* --- a --- */
+a{
+	text-decoration:none;
+}
+a.a_moji{
+	color:#666;
+	text-decoration:underline;
+}
+a.a_moji02{
+	color:#333;
+	text-decoration:underline;
+}
+a.tap_black{
+	-webkit-tap-highlight-color: rgba(0,0,0,0.1);
+}
+a.tap_white{
+	-webkit-tap-highlight-color: rgba(255,255,255,0.3);
+}
+/* --- font --- */
+h1.h1_gray{
+	background:#f2f2f2;
+	color:#999;
+	font-size:12px;
+	padding:4px 5%;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+}
+h1.img_logo{
+	margin:15px auto;
+	width:50%;
+}
+h1.img_logo img{
+	width:100%;
+}
+.message{
+	margin:15px auto;
+	text-align:center;
+	display:block;
+	font-size:12px;
+	line-height:1.3;
+}
+.message_big{
+	padding:0 5%;
+	margin:15px 0;
+	text-align:left;
+	display:block;
+	font-size:16px;
+	line-height:1.5;
+}
+.message_big02{
+	padding:10px 0 0;
+	margin:0 5%;
+	text-align:left;
+	display:block;
+	font-size:14px;
+	line-height:1.5;
+}
+.message_big_pink{
+	margin:15px auto;
+	text-align:center;
+	display:block;
+	font-size:18px;
+	color:#EE6D4E;
+	font-weight:bold;
+}
+.message_small{
+	padding:0 5%;
+	margin:15px 0;
+	text-align:left;
+	display:block;
+	font-size:12px;
+	line-height:1.3;
+	color:#666;
+}
+.p_error{
+	margin:30px auto;
+	text-align:center;
+	display:block;
+	font-size:12px;
+	color:#ee6d4e;
+	line-height:1.3;
+}
+.p_error02{
+	padding:10px 0;
+	text-align:center;
+	display:block;
+	color:#ee6d4e;
+	font-size:12px;
+	background:#fff;
+	line-height:1.3;
+}
+.p_error03{
+	margin:15px auto;
+	text-align:center;
+	display:block;
+	color:#ee6d4e;
+	font-size:12px;
+	line-height:1.3;
+}
+.p_small{
+	font-size:12px;
+	color:#999;
+}
+.p_box{
+	margin:10px 0;
+	padding:5px;
+	border:1px solid #999;
+	color:#666;
+	font-size:12px;
+	line-height:1.3;
+	text-align:center;
+}
+/* --- font common --- */ 
+.p13px{
+	font-size:13px;
+}
+.p14px{
+	font-size:14px;
+}
+.p16px{
+	font-size:16px;
+}
+.p19px_gray{
+	font-size:13px;
+	color:#999;
+}
+.gray{
+	color:#666;
+}
+.pink{
+	color:#EE6D4E;
+}
+.bold{
+	font-weight:bold;
+}
+p_center{
+	text-align:center;
+}
+.line_height{
+	line-height:1.3;
+}
+/* --- margin --- */ 
+.margin_space{
+	margin:0 5%;
+}
+.padding_space{
+	padding:0 10%;
+}
+.top03px{
+	margin:3px 0 0 0;
+}
+.top05px{
+	margin:5px 0 0 0;
+}
+.top10px{
+	margin:10px 0 0 0;
+}
+.top20px{
+	margin:20px 0 0 0;
+}
+.top30px{
+	margin:30px 0 0 0;
+}
+/* --- btn --- */
+.btn01{
+	display:block;
+	margin:10px auto 0;
+	padding:15px 0;
+	border: 0px;
+    width: 90%;
+	height:20px;
+	background: url(../../../img/common/form_btn02.png) #333 no-repeat;
+	border-radius:3px;
+	moz-border-radius:3px;
+    -webkit-border-radius:3px;
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+	-webkit-tap-highlight-color: rgba(255,255,255,0.3);
+}
+.btn02{
+	display:block;
+	margin:10px auto 0;
+	padding:15px 0;
+	border: 0px;
+    width: 90%;
+	height:20px;
+	background: url(../../../img/common/form_btn02.png) #f78b71 no-repeat;
+	border-radius:3px;
+	moz-border-radius:3px;
+    -webkit-border-radius:3px;
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+	-webkit-tap-highlight-color: rgba(255,255,255,0.3);
+}
+
+/* ---------------------------------------------------------------
+common
+----------------------------------------------------------------*/
+form{
+	margin:15px 0;
+	padding:0 5%;
+}
+form li{
+	margin:0 0 15px;
+}
+form li p{
+	margin:0 0 6px;
+}
+input, button, textarea, select {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+}
+input[type=text],input[type=email],input[type=password],textarea{
+	padding:5px 5%;
+	width:90%;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius:3px;
+	border:1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    background:#fff;
+}
+textarea{
+	height:80px;
+}
+input[type=text].security_code{
+	float:left;
+	margin:0 5% 0 0;
+	width:35%;
+}
+/* --- input[type="checkbox"] --- */
+input[type="checkbox"]{
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-appearance: none;
+	width:20px;
+	height:20px;
+	border-radius:2px;
+	border:1px solid #ddd;
+	background:#fff;
+}
+input[type="checkbox"]:checked {
+}
+input[type="checkbox"]:checked:before {
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    display: block;
+    content: "";
+    width: 10px;
+    height: 4px;
+    background: #333;
+    -webkit-transform: rotate(45deg);
+    -webkit-transform-origin: right center;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    content: "";
+    width: 16px;
+    height: 4px;
+    background: #333;
+    -webkit-transform: rotate(-53deg);
+    -webkit-transform-origin: left center;
+}
+/* --- select --- */
+select{
+	padding:0 0 0 12px;
+	width:100%;
+    height: 42px;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	text-indent: .01px; /*Firefox用*/
+    text-overflow: "";
+    border-radius:3px;
+	border:1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    background:#fff url(../../../img/common/form_select_btn.png) no-repeat;
+	background-size:40px;
+    background-position: right center;
+}
+select.cardmonth,select.cardyear{
+	width:45%;
+}
+/* --- form_btn --- */
+#form_btn{
+	margin:10px 0 0;
+	border: 0px;
+    width: 100%;
+    height: 50px;
+    background: url(../../../img/common/form_btn.png) #f78b71 right bottom no-repeat;
+	background-size: 45px 46px;
+	border-radius:3px;
+	font-size:20px;
+	color:#fff;
+}
+#form_btn02{
+	margin:10px 0 0;
+	border: 0px;
+    width: 100%;
+    height: 50px;
+	background: url(../../../img/common/form_btn02.png) #333 no-repeat;
+	border-radius:3px;
+	moz-border-radius:3px;
+    -webkit-border-radius:3px;
+	font-size:20px;
+	color:#fff;
+	-webkit-tap-highlight-color: rgba(255,255,255,0.3);
+}
+#form_btn03{
+	margin:10px 0 0;
+	border: 0px;
+    width: 100%;
+    height: 50px;
+	background: url(../../../img/common/form_btn02.png) #f78b71 no-repeat;
+	border-radius:3px;
+	moz-border-radius:3px;
+    -webkit-border-radius:3px;
+	font-size:20px;
+	color:#fff;
+	-webkit-tap-highlight-color: rgba(255,255,255,0.3);
+}
+
+/* ---------------------------------------------------------------
+dl
+----------------------------------------------------------------*/
+dl{
+	margin:0 0 20px;
+	padding:0 5%;
+}
+dt{
+	margin:15px 0 0;
+	font-weight:bold;
+}
+dd{
+	margin:10px 0 0;
+	line-height:1.3;
+	color:#666;
+}
+
+/* ---------------------------------------------------------------
+header
+----------------------------------------------------------------*/
+header{
+	height:45px;
+	background:#fff;
+	border-bottom:1px solid #ddd;
+}
+header p{
+	padding:12px;
+	text-align:center;
+	font-size: 17px;
+}
+
+/* ---------------------------------------------------------------
+footer
+----------------------------------------------------------------*/
+footer{
+	margin:30px;
+	height:10px;
+}
+footer ul{
+	padding:0 0 20px;
+}
+footer ul li{
+	margin:0 0 20px;
+	text-align:center;
+}
+
+
+/* ---------------------------------------------------------------
+loading
+----------------------------------------------------------------*/
+.img_loading{
+	width:30px;
+	height:30px;
+	margin:0 auto;
+}
