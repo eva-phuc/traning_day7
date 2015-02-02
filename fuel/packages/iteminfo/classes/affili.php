@@ -24,8 +24,9 @@ class Affili {
         }
         
         // 商品IDから商品情報取得
-        $itemData = Model_Item::getIdData($itemId);
-        if (! empty($itemDate)) {
+		$modelItem = new Model_Item();
+        $itemData = $modelItem->getIdData($itemId);
+        if (! empty($itemData)) {
             return false;
         }
         

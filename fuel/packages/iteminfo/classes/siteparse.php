@@ -74,7 +74,7 @@ class Siteparse {
      * @return array
      * @author higuchi
      */
-    private function urlParseYshop($url) {
+    private static function urlParseYshop($url) {
         $hostUrl = \Config::get('s.urls.yshop');
         $site = \Config::get('s.site');
 
@@ -497,7 +497,7 @@ class Siteparse {
             $siteParams['item_code'] = $item;
 
             // 商品データ取得
-            $siteParams['item'] = Model_Site_Buyma::getData($url);
+            $siteParams['item'] = ModelSiteBuyma::getData($url);
             return $siteParams;
         } catch (\Exception $e) {
             \Common\Error::instance()

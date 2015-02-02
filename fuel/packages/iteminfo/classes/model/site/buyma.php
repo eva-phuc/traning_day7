@@ -3,9 +3,9 @@
 namespace Iteminfo;
 
 /**
- * Stylife API
+ * Buyma API
  */
-class Model_Site_Buyma extends \Model
+class ModelSiteBuyma extends \Model
 {
 
     /**
@@ -17,7 +17,9 @@ class Model_Site_Buyma extends \Model
     public static function getData($url)
     {
         //fetch and check html data
-        $htmlData = \Model_Gethtml::getData($url);
+		$getHtml = new Model_Gethtml();
+        $htmlData = $getHtml->getData($url);
+        //$htmlData = \Model_Gethtml::getData($url);
         if ($htmlData === false) {
             return false;
         }

@@ -19,7 +19,7 @@ Autoloader::add_classes(array(
 	'Iteminfo\\Model_Site_Nissen'    		=> __DIR__.'/classes/model/site/nissen.php',
 	'Iteminfo\\Model_Site_Magaseek'   		=> __DIR__.'/classes/model/site/magaseek.php',
 	'Iteminfo\\Model_Site_Stylife'  		=> __DIR__.'/classes/model/site/stylife.php',
-	'Iteminfo\\Model_Site_Buyma'  		=> __DIR__.'/classes/model/site/buyma.php',
+	'Iteminfo\\ModelSiteBuyma'  		=> __DIR__.'/classes/model/site/buyma.php',
 ));
 
 
